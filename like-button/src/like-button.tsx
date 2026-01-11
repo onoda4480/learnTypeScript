@@ -1,3 +1,4 @@
 export function LikeButton() {
-  return <button type="button">Like Button</button>;
+    const count = 999; 
+  return <button type="button">{count}</button>;
 }
