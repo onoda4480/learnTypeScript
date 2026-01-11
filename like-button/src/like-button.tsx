@@ -1,3 +1,5 @@
+import "./like-button.css";
+
 export function LikeButton() {
     const count = 999; 
     return(
