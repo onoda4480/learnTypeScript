@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ボタンをクリックしたときのカウントが1000になること 1`] = `
+<div>
+  <button
+    type="button"
+  >
+    1000
+  </button>
+</div>
+`;

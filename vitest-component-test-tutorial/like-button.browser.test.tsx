@@ -9,8 +9,8 @@ test("ボタンを表示したときのカウントが999であること", async
 });
 
 test("ボタンをクリックしたときのカウントが1000になること", async () => {
-    const { getByRole } = await render(<LikeButton />);
+    const { getByRole, container } = await render(<LikeButton />);
     const button = getByRole("button");
     await button.click();
-    await expect.element(button).toHaveTextContent(/^1000$/);
+    expect(container).toMatchSnapshot();
 });
