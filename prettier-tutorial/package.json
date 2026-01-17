@@ -1,4 +1,7 @@
 {
   "name": "prettier-tutorial",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "prettier": "^3.8.0"
+  }
 }
