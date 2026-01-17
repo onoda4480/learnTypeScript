@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { fetchImage } from "./fetch-image";
+import styles from "./page.module.css";
 
 // コンポーネントの引数を定義する
 type CatImageProps = {
@@ -21,11 +22,15 @@ export function CatImage({url}:CatImageProps){
     };
 
     return(
-        <div>
+        <div className={styles.page}>
             {/* (4) ボタンの表示 */}
-            <button onClick={refreshImage}> 他のニャンコも見る </button>
+            <button onClick={refreshImage} className={styles.button}>
+                他のニャンコも見る
+            </button>
         {/* (5) 画像の表示 */}
-        {imageUrl && <img src={imageUrl} />}
+            <div className={styles.frame}>
+                {imageUrl && <img src={imageUrl} className={styles.img}/>}
+            </div>
         </div>
     );
 }
