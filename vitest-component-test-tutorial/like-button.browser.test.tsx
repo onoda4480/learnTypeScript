@@ -3,6 +3,6 @@ import { render } from "vitest-browser-react"
 import { LikeButton } from "./like-button";
 
 test("ボタンを表示したときのカウントが999であること", async() => {
-    //描画のテスト
-    await render(<LikeButton />);
+    const {getByRole} = await render(<LikeButton />);
+    const button = getByRole("button");
 });
