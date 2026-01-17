@@ -6,3 +6,7 @@ test("0を渡したらtrueになること", () => {
     expect(result).toBe(true);
     // toBeはマッチャーで===と同じ意味
     });
+test("1を渡したらflaseになる", () => {
+    const result = isZero(1);
+    expect(result).toBe(false);
+    });
