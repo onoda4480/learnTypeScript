@@ -5,10 +5,25 @@ import { defineConfig } from "vitest/config";
 export default defineConfig({
   plugins: [react()],
   test: {
-    browser: {
-      enabled: true,
-      provider: playwright(),
-      instances: [{ browser: "chromium" }],
-    },
+    projects: [
+      {
+        test: {
+          name: "unit",
+          include: ["**/*.unit.{test,spec}.ts"],
+          environment: "node",
+        },
+      },
+      {
+        test: {
+          name: "browser",
+          include: ["**/*.browser.{test,spec}.{ts,tsx}"],
+          browser: {
+            enabled: true,
+            provider: playwright(),
+            instances: [{ browser: "chromium" }],
+          },
+        },
+      },
+    ],
   },
 });
