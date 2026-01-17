@@ -2,5 +2,8 @@
   "name": "vitest-tutorial",
   "version": "1.0.0",
   "license": "UNLICENSED",
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
 }
