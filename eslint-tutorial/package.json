@@ -1,5 +1,8 @@
 {
   "name": "eslint-tutorial",
   "license": "UNLICENSED",
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
 }
