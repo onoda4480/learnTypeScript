@@ -3,6 +3,7 @@
   "license": "UNLICENSED",
   "type": "module",
   "devDependencies": {
+    "jiti": "^2.6.1",
     "typescript": "^5.9.3"
   }
 }
